@@ -9,7 +9,7 @@ const Shop = ({ product, addToCardInfo }) => {
         <div className='product'>
             <div className='product-container'>
                 <img src={picture} alt="" />
-                <h3>Name : {name}</h3>
+                <h4>Name : {name}</h4>
                 <p>Price :{price}</p>
             </div>
             <button onClick={() => addToCardInfo(product)} className='btn-class'>
