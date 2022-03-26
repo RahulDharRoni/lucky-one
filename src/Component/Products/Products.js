@@ -20,13 +20,15 @@ const Products = () => {
         setCartInfo(newCart);
     }
 
-    // const [random, setRandom] = useState([]);
-    // const addRandom = () => {
-    //     const newCart = cart;
-    //     const randomItem = newCart[Math.floor(Math.random() * newCart.length)]
-    //     const newRandomItems = [randomItem];
-    //     setRandom(newRandomItems)
-    // }
+    const [random, setRandom] = useState([]);
+    const addRandom = () => {
+        const random = cart[Math.floor(Math.random() * cart.length)]
+        setRandom(random)
+        // const newCart = cart;
+        // const randomItem = newCart[Math.floor(Math.random() * newCart.length)]
+        // const newRandomItems = [randomItem];
+        // setRandom(newRandomItems);
+    }
 
     return (
         <div className='shop-component'>
@@ -38,7 +40,7 @@ const Products = () => {
 
             <div className='cart-container'>
 
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} random={random} addRandom={addRandom} ></Cart>
 
             </div>
         </div>

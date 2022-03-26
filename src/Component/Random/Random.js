@@ -1,14 +1,13 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import './Random.css'
 
-const Random = ({ random }) => {
-    // console.log(random)
-    // console.log(addRandom)
-    // random.map(ran => console.log(ran))
-
+const Random = ({ randoms }) => {
     return (
-        <div>
-            {/* <p>{random.name.name}</p> */}
-            <p>{random}</p>
+        <div className='randoms-style'>
+            <img src={randoms.picture} alt="" />
+            <p>{randoms.name}</p>
         </div>
     );
 };
