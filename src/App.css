@@ -36,4 +36,8 @@
     transform: rotate(360deg);
   }
 }
+.Question{
+  text-align: justify;
+  padding: 50px;
+}
 
