@@ -5,4 +5,14 @@
 .product-component{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 40px 10px;
+}
+.cart-container{
+    background-color: rgb(248, 205, 152);
+    padding: 10px;
+}
+@media screen and (max-width:1100px) {
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
