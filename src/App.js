@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Products from './Component/Products/Products';
+import Header from './Component/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to the Desy Book Center</h1>
-      <p>Learn and grow rich! Knowledge is money! </p>
+      <Header></Header>
       <Products></Products>
     </div>
   );

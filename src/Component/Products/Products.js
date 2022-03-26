@@ -29,10 +29,15 @@ const Products = () => {
         // const newRandomItems = [randomItem];
         // setRandom(newRandomItems);
     }
+    const emptyAllProducts = () => {
+        const emptyAll = {};
+        setRandom(emptyAll)
+    }
 
     return (
         <div className='shop-component'>
             <div className='product-component'>
+
                 {
                     products.map(product => <Shop key={product.id} product={product} addToCardInfo={addToCardInfo}></Shop>)
                 }
@@ -40,7 +45,7 @@ const Products = () => {
 
             <div className='cart-container'>
 
-                <Cart cart={cart} random={random} addRandom={addRandom} ></Cart>
+                <Cart cart={cart} random={random} addRandom={addRandom} emptyAllProducts={emptyAllProducts} ></Cart>
 
             </div>
         </div>

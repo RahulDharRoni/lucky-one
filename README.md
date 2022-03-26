@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Desy-Book-Shops
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/Programming-Hero-Web-Course4/lucky-one-RahulDharRoni).
 
 ## Available Scripts
 

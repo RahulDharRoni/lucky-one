@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import './Info.css'
 
 const Info = ({ cart }) => {
@@ -8,7 +8,7 @@ const Info = ({ cart }) => {
         <div className='info-style'>
             <img src={cart.picture} alt="" />
             <p>{cart.name}</p>
-            <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
         </div>
     );
 };
