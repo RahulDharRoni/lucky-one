@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Info from '../Info/Info';
 import Random from '../Random/Random';
-// import Products from '../Products/Products';
 import './Cart.css'
 
 const Cart = ({ cart, random, emptyAllProducts, addRandom }) => {

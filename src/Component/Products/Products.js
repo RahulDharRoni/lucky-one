@@ -24,13 +24,9 @@ const Products = () => {
     const addRandom = () => {
         const random = cart[Math.floor(Math.random() * cart.length)]
         setRandom(random)
-        // const newCart = cart;
-        // const randomItem = newCart[Math.floor(Math.random() * newCart.length)]
-        // const newRandomItems = [randomItem];
-        // setRandom(newRandomItems);
     }
     const emptyAllProducts = () => {
-        const emptyAll = {};
+        const emptyAll = [];
         setRandom(emptyAll)
     }
 
