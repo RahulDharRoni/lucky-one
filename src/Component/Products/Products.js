@@ -7,6 +7,7 @@ const Products = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCartInfo] = useState([])
 
+
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -18,6 +19,15 @@ const Products = () => {
         const newCart = [...cart, product]
         setCartInfo(newCart);
     }
+
+    // const [random, setRandom] = useState([]);
+    // const addRandom = () => {
+    //     const newCart = cart;
+    //     const randomItem = newCart[Math.floor(Math.random() * newCart.length)]
+    //     const newRandomItems = [randomItem];
+    //     setRandom(newRandomItems)
+    // }
+
     return (
         <div className='shop-component'>
             <div className='product-component'>
@@ -29,6 +39,7 @@ const Products = () => {
             <div className='cart-container'>
 
                 <Cart cart={cart}></Cart>
+
             </div>
         </div>
     );
