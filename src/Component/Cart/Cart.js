@@ -8,7 +8,7 @@ const Cart = ({ cart, random, emptyAllProducts, addRandom }) => {
 
         <div>
             <div className='cart-info-style'>
-                <h1>Add To Card</h1>
+                <h3>Add To Card</h3>
                 {
                     cart.map(cart => <Info key={cart.id} cart={cart}></Info>)
                 }
@@ -16,7 +16,7 @@ const Cart = ({ cart, random, emptyAllProducts, addRandom }) => {
                 <button onClick={addRandom}>CHOOSE 1 FOR ME</button>
                 <button onClick={emptyAllProducts}>CHOOSE AGAIN</button>
             </div>
-            <div>
+            <div className='card-random'>
                 <Random randoms={random}></Random>
             </div>
         </div>

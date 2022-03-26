@@ -20,5 +20,11 @@
 @media screen and (max-width:600px) {
     .product-component{
         grid-template-columns: repeat(1, 2fr);
+        margin: auto;
     }
 }
+/* @media screen and (max-width:600px) {
+    .cart-container{
+        ;
+    }
+} */

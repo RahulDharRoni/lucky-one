@@ -26,8 +26,10 @@ const Products = () => {
         setRandom(random)
     }
     const emptyAllProducts = () => {
-        const emptyAll = [];
-        setRandom(emptyAll)
+        // const emptyAll = [];
+        // setRandom(emptyAll)
+        setCartInfo([])
+
     }
 
     return (
